@@ -1,0 +1,87 @@
+#wrapper{
+  width:78em;
+  margin:0 auto;
+}
+
+header {
+  background-color: #339933;
+}
+
+#logo {
+  height: 4.8em;
+  margin-left: 6.2em;
+  margin-right: 7em;
+}
+
+#logo-text{
+  text-align: center;
+  color: #2B332E;
+  font-family: gill sans;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0em;
+  padding: 0em;
+  overflow: hidden;
+}
+
+#link {
+  float: left;
+}
+
+#nav {
+  display: block;
+  width: 11em;
+  color: white;
+  margin-top: 3.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home-push{
+  margin-left: 3.3em;
+}
+
+/* End of Header, Start of Body */
+
+#background::after {
+  content: "";
+  background: url("http://www.all2need.com/wp-content/uploads/2012/03/Gray-3D-robot-wallpaper.jpg");
+  /* background-size: cover; */
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;   
+}
+
+form {
+  text-align: center;
+  background-color: rgba(204,204,204,0.5);
+  margin-left: 35em;
+  margin-right: 35em;
+  margin-top: 6.5em;
+}
+
+#instructions {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 0.2em;
+}
+
+#contact {
+  text-align: center; 
+  background-color: rgba(204,204,204,0.5);
+}
+
+ol {
+  margin-left: 33em;
+	margin-right: 34em;
+  margin-top: 3em;
+	background-color: rgba(204,204,204,0.5);
+}

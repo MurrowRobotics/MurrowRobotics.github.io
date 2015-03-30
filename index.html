@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> ERM Robotics </title>
+        <meta charset="UTF-8">
+        <meta name="language" content="english"> 
+        <meta name="description" content="Edward R. Murrow High School robotics team">
+        <meta name="keywords" content="FIRST, Robots, Arduino, Edward R. Murrow High School">
+        <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+        <script src="/static/js/index.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <ul>
+                    <li>
+                        <a href = "index.html">
+                            <img id = "logo" src = "http://www.ifmb.ch/uploads/images/500px-icon.png"></img>
+                            <div id = "logo-text"><h2> MURROW TBD </h2></div>
+                        </a>
+                    </li>
+                    <li>
+                        <div id = "home-push">
+                            <span id = "nav">
+                                <a href="index.html"><tt><h1>Home</h1></tt></a>
+                            </span>            
+                        </div>
+                    </li>
+                    <li>
+                        <span id = "nav">
+                            <a href = "news.html"><tt><h1>News</h1></tt></a>
+                        </span>
+                    </li>
+                    <li>
+                        <span id = "nav">
+                           <a href = "contact.html"><tt><h1>Contact</h1></tt></a>
+                        </span>
+                    </li>
+                    <li>
+                        <span id = "nav">
+                            <a href = "sponsor.html"><tt><h1>Sponsor</h1></tt></a>  
+                        </span>
+                    </li>
+                    <li>
+                        <span id = "nav">
+                            <a href = "resources.html"><tt><h1>Resources</h1><tt></a>
+                        </span>
+                    </li>
+                </ul> 
+            </header>
+            <div id = "background"> <!-- add image in CSS --> </div>
+            <div id= "paragraph">
+                <p><h1> Welcome to Team #???? Murrow TBD's official website. We represnt Edward R. Murrow High School in the FIRST (For Inspiration and Recognition of Science and Technology) Tech Challenge competiton. And amongst other things we are: <!-- To be continued in next div -->
+            </div>
+            <div id="textslide">
+                    <p>
+                    <!-- Adjectives to be placed here -->
+                    </p>
+            </div>
+            <!-- JS for changing the words in textslide -->
+            <script>
+                var adjectives = new Array();
+
+                adjectives[0] = "Programmers";
+                adjectives[1] = "Engineers";
+                adjectives[2] = "Designers";
+                adjectives[3] = "Marketers";
+                adjectives[4] = "Artists";
+                console.log(adjectives);
+                var counter = 0;
+
+                function loop() { 
+                    if (counter > 4) counter = 0;
+                    document.getElementById('textslide').firstElementChild.innerHTML = adjectives[counter];
+                    counter++;
+                    console.log(counter);
+                    setTimeout(loop, 2200);
+                }
+                loop();
+            </script>
+            <div id = "squad-photo">
+               <img id = "squad", src = "http://upload.wikimedia.org/wikipedia/commons/6/6f/Israel_line-up_against_Norway.jpg"></img>
+            </div>
+        </div> <!-- Close wrapper -->
+    </body>
+</html>
